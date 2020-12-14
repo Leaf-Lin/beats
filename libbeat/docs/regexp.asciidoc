@@ -48,8 +48,8 @@ The following patterns are supported:
 |[[single-characters]]*Single Characters* 1+|
 |`x`              |single character
 |`.`              |any character
-|`[xyz]`          |character class
-|`[^xyz]`         |negated character class
+|`[xyz]`          |Match any one of the characters in the bracket. Inside the brackets, `-` indicates a range unless `-` is the first character or escaped
+|`[^xyz]`         |A `^` before a character in the brackets negates the character or range. This matches any character except 'x', 'y', or 'z'
 |`[[:alpha:]]`    |ASCII character class
 |`[[:^alpha:]]`   |negated ASCII character class
 |`\d`             |Perl character class
